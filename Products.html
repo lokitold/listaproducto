@@ -863,6 +863,84 @@
             </div>
         </div>
         <div class="container-fluid">
+
+            <!-- panel copiar -->
+            <div class="row">
+                <div class="col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                Copiar Producto
+                            </div>
+                            <div class="panel-body" id="panel-copy">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <h4>Tienda </h4>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <select class="form-control testSelect">
+                                            <option value="test1">test1</option>
+                                            <option value="test2">test2</option>
+                                            <option value="test3">test3</option>
+                                            <option value="test4">test4</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <h4>Catalogo </h4>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <select class="form-control SelectCatalogo">
+                                            <option value="test1">test1</option>
+                                            <option value="test2">test2</option>
+                                            <option value="test3">test3</option>
+                                            <option value="test4">test4</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="pull-right">
+                                            <button type="button" data-toggle="tooltip" title="" class="btn btn-default"
+                                                    onclick="$('#form-product').attr('action', 'http://dev.catalogo.ecincubator.net/admin/index.php?route=catalog/product/copy&amp;token=C6Al1EKuohID8Wr9zHT5CZK3GqrbSJB9').submit()"
+                                                    data-original-title="Copy"><i class="fa fa-copy"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <script>
+                //select Tienda
+                var selectTienda = document.querySelector(".testSelect");
+                var selectOption = selectTienda.options[selectTienda.selectedIndex];
+                var lastSelected = localStorage.getItem('testSelect');
+
+                if (lastSelected) {
+                    selectTienda.value = lastSelected;
+                }
+
+                selectTienda.onchange = function () {
+                    lastSelected = selectTienda.options[selectTienda.selectedIndex].value;
+                    console.log(lastSelected);
+                    localStorage.setItem('testSelect', lastSelected);
+                }
+                // select Catalogo
+                var select = document.querySelector(".SelectCatalogo");
+                var selectOption = select.options[select.selectedIndex];
+                var lastSelected = localStorage.getItem('SelectCatalogo');
+
+                if (lastSelected) {
+                    select.value = lastSelected;
+                }
+
+                select.onchange = function () {
+                    lastSelected = select.options[select.selectedIndex].value;
+                    console.log(lastSelected);
+                    localStorage.setItem('SelectCatalogo', lastSelected);
+                }
+                //http://stackoverflow.com/questions/23905358/how-to-use-localstorage-on-last-html-select-value
+            </script>
+            <!-- fin panel copiar -->
+
+
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title"><i class="fa fa-list"></i> Product List</h3>
