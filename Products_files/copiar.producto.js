@@ -75,5 +75,5 @@
         });
         copy.init(selectNameTienda);
     });
-    
+
 }());
