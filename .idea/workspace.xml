@@ -25,8 +25,8 @@
       <file leaf-file-name="Products.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Products.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.965517">
-              <caret line="879" column="80" selection-start-line="879" selection-start-column="80" selection-end-line="879" selection-end-column="80" />
+            <state vertical-scroll-proportion="-3.310345">
+              <caret line="886" column="82" selection-start-line="886" selection-start-column="68" selection-end-line="886" selection-end-column="82" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -36,20 +36,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="copiar.producto.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="copiar.producto.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Products_files/copiar.producto.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.783334">
-              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+            <state vertical-scroll-proportion="1.793953">
+              <caret line="89" column="40" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.08044693">
+            <state vertical-scroll-proportion="-1.2413793">
               <caret line="4" column="54" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
               <folding />
             </state>
@@ -69,8 +69,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Products.html" />
-        <option value="$PROJECT_DIR$/Products_files/copiar.producto.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Products_files/copiar.producto.js" />
       </list>
     </option>
   </component>
@@ -188,10 +188,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-10" y="-14" width="1940" height="1104" extended-state="6" />
+    <frame x="-10" y="-14" width="1940" height="1104" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -231,10 +231,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2413793">
+          <caret line="4" column="54" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Products.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.965517">
-          <caret line="879" column="80" selection-start-line="879" selection-start-column="80" selection-end-line="879" selection-end-column="80" />
+        <state vertical-scroll-proportion="-3.310345">
+          <caret line="886" column="82" selection-start-line="886" selection-start-column="68" selection-end-line="886" selection-end-column="82" />
           <folding>
             <element signature="n#style#0;n#input#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -245,16 +253,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Products_files/copiar.producto.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.783334">
-          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08044693">
-          <caret line="4" column="54" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
+        <state vertical-scroll-proportion="1.793953">
+          <caret line="89" column="40" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="40" />
           <folding />
         </state>
       </provider>

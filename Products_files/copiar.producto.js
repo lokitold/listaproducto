@@ -18,7 +18,7 @@
 
             selectTienda.onchange = function () {
                 lastSelected = selectTienda.options[selectTienda.selectedIndex].value;
-                console.log(lastSelected);
+                //console.log(lastSelected);
                 localStorage.setItem(selectName, lastSelected);
             }
         },
@@ -69,11 +69,27 @@
 
     copy.getJsonP(urlServiceTienda,function(dataTienda){
         var $select = $(selectNameTienda);
-        console.log(dataTienda);
+        //console.log(dataTienda);
         $.each(dataTienda, function(i, val){
             $select.append($('<option />', { value: (val.empresa_id), text: val.razonsocial }));
         });
         copy.init(selectNameTienda);
+
     });
+
+    //
+    $(selectNameTienda).on('change', function(){
+        var selectTienda = $(selectNameTienda);
+        var tiendaId = selectTienda.val();
+        copy.getJsonP(urlServiceCatalogo+'?empresa_id='+tiendaId,function(dataCatalogo){
+            var $select = $(selectNameCatalogo);
+            $select.empty();
+            $.each(dataCatalogo, function(i, val){
+                $select.append($('<option />', { value: (val.catalogo_id), text: val.nombre }));
+            });
+            copy.init(selectNameCatalogo);
+        });
+    });
+
 
 }());
