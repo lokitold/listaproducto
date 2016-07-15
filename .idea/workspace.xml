@@ -39,8 +39,8 @@
       <file leaf-file-name="copiar.producto.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Products_files/copiar.producto.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.793953">
-              <caret line="89" column="40" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.5363942">
+              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -188,7 +188,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-10" y="-14" width="1940" height="1104" extended-state="7" />
+    <frame x="-10" y="-14" width="1940" height="1104" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -253,8 +253,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Products_files/copiar.producto.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.793953">
-          <caret line="89" column="40" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.5363942">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
           <folding />
         </state>
       </provider>

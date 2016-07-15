@@ -1,11 +1,5 @@
 (function() {
 
-    var $hostname = window.location.host;
-    var selectNameTienda = '.testSelect';
-    var selectNameCatalogo = '.SelectCatalogo';
-    var urlServiceCatalogo = 'http://dev.3.elcomercio.pe/catalogo/api/catalogo';
-    var urlServiceTienda = 'http://dev.3.elcomercio.pe/catalogo/api/tienda';
-
     var copy = {
         init : function (selectName) {
             var selectTienda = document.querySelector(selectName);
@@ -22,25 +16,22 @@
                 localStorage.setItem(selectName, lastSelected);
             }
         },
-        //getEnviroment : function (){
-        //
-        //    var $indexOf_hostname = $hostname.indexOf("dev.catalogo.ecincubator.net");
-        //
-        //    if ($indexOf_hostname != -1){
-        //        switch ($hostname.substr(0, $indexOf_hostname)){
-        //            case "dev.3." : return 'dev.3.';
-        //                break;
-        //            case "pre.3." : return 'pre.3.';
-        //                break;
-        //            default :
-        //                USERNAME = "service_hiraoka@gmail.com";
-        //                PASSWORD = "Cd3v3l0per*1";
-        //                return '';
-        //                break;
-        //        }
-        //    }
-        //
-        //},
+        getEnviroment : function (){
+
+            if($hostname.indexOf("dev.catalogo.ecincubator.net") != -1){
+                return 'dev.3.';
+            }
+            else if($hostname.indexOf("localhost")!= -1){
+                return 'dev.3.';
+            }
+            else if($hostname.indexOf("pre.catalogo.ecincubator.net")!= -1){
+                return 'pre.3.';
+            }
+            else{
+                return '';
+            }
+
+        },
         getJsonP: function (urlService,callback){
             $.ajax({
                 url: urlService,
@@ -58,6 +49,15 @@
             });
         }
     }
+
+
+    var $hostname = window.location.host;
+    var selectNameTienda = '.testSelect';
+    var selectNameCatalogo = '.SelectCatalogo';
+    var urlServiceCatalogo = 'http://'+copy.getEnviroment()+'elcomercio.pe/catalogo/api/catalogo';
+    var urlServiceTienda = 'http://'+copy.getEnviroment()+'elcomercio.pe/catalogo/api/tienda';
+
+    console.log(urlServiceCatalogo);
 
     copy.getJsonP(urlServiceCatalogo,function(dataCatalogo){
         var $select = $(selectNameCatalogo);
@@ -77,7 +77,6 @@
 
     });
 
-    //
     $(selectNameTienda).on('change', function(){
         var selectTienda = $(selectNameTienda);
         var tiendaId = selectTienda.val();
